@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+            <h1>Brazil Pizzaria</h1>
+            <h2>Pizzaria e Lanchonete</h2>
+    </header>
+
+    <section>
+        <form>
+            <h3>Escolha o sabor:</h3>
+            <ul>
+                <li><input type="radio" id="mozarela" name="pizzas">
+                    <label for="mozarela">Mozarela</label>
+                </li>
+                <li><input type="radio" id="mista" name="pizzas">
+                    <label for="mista">Mista</label>
+                </li>
+                <li><input type="radio" id="calabresa" name="pizzas">
+                    <label for="calabresa">Calabresa</label>
+                </li>
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <button class="botao" id="vendas"><strong>Vendas</strong></button> <button class="botao" id="estorno"><strong>Estorno</strong></button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>Sabores</th>
+                <th>Quantidade</th>
+                <th>Valores</th>
+            </tr>
+            <tr>
+                <td>Mozarela</td>
+                <td id="resultMozarela"></td>
+                <td id="vendaMozarela"></td>
+            </tr>
+            <tr>
+                <td>Mista</td>
+                <td id="resultMista"></td>
+                <td id="vendaMista"></td>
+            </tr>
+            <tr>
+                <td>Calabresa</td>
+                <td id="resultCalabresa"></td>
+                <td id="vendaCalabresa"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button class="botao" id="export"><strong>Planilha</strong></button>
+    </section>
+
+    <script src="tableToExcel.js"></script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

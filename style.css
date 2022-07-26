@@ -1,0 +1,54 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    background-color: #ced4da;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #343a40;
+    color: #fdf0d5;
+}
+
+section form ul li {
+    list-style: none;
+}
+
+section form ul li label {
+    font-size: 22px;
+}
+
+section {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+section button {
+    margin: 5px;
+    font-size: 20px;
+}
+
+table,th,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.botao {
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8%;
+    background-color: #343a40;
+    color: #fdf0d5;
+}
+
+.botao:hover{
+    background-color: #003049;
+    cursor: pointer;
+}
